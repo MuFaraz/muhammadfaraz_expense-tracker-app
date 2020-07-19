@@ -33,7 +33,7 @@ jobs:
       run: yarn build  
     - name: install Surge
       run: npm install -g surge
-      
+    
     - name: Deploying Surge
       run: surge ./build http://muhammadfaraz-expense-app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
 
